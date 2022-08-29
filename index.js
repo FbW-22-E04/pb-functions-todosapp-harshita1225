@@ -27,8 +27,8 @@ class ToDoApp {
   }
 
   RenderToDosListTemplate() {
-    if (this.todolist === []) {
-      console.log(` to do list is empty!!`);
+    if (this.todolist.length === 0) {
+      console.log(`to do list is empty!!`);
     } else {
       this.todolist.forEach((item, i) => console.log(`${i} : ${item} \n`));
     }
@@ -51,7 +51,6 @@ const harshita = new ToDoApp("harshita");
 console.log(harshita);
 harshita.RenderToDosListTemplate();
 
-/*
 console.log(`-----------------------------`);
 harshita.insertTodo(testData[1]);
 harshita.insertTodo(testData[2]);
@@ -71,4 +70,3 @@ harshita.createTodo([
 console.log(harshita);
 
 harshita.RenderToDosListTemplate();
-*/
